@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #c2e59c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3cc, rgb(82, 255, 255));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3cc, rgb(82, 255, 255));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main {
+  margin-top: -20px;
+  max-height: calc(100vh - 256px);
+  min-height: 500px;
+  height: 100%;
+
+  .empty {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(253, 236, 234);
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+}

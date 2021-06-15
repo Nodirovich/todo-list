@@ -1,0 +1,28 @@
+.task {
+  &__title {
+    font-weight: 500;
+    font-size: 1rem !important;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+
+    &.done {
+      opacity: .8;
+
+      .task__title {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+
+    button:first-child {
+      margin-right: 10px !important;
+    }
+  }
+}

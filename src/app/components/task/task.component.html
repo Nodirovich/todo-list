@@ -1,0 +1,34 @@
+<mat-list-item role="listitem" class="task">
+  <mat-checkbox
+    class="task__content"
+    [checked]="task.done"
+    (change)="setTask('done')"
+    [class.done]="task.done"
+  >
+    <div mat-line class="task__title">
+      {{ task.title }}
+    </div>
+    <div mat-line>
+      {{ task.content }}
+    </div>
+  </mat-checkbox>
+
+  <div class="task__btns">
+    <button
+      mat-mini-fab
+      color="primary"
+      aria-label="Delete task"
+      (click)="setTask('edit')"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button
+      mat-mini-fab
+      color="warn"
+      aria-label="Delete task"
+      (click)="setTask('remove')"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</mat-list-item>
