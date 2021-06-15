@@ -75,7 +75,7 @@ export class ListService {
     const filterList = this.list.filter(({title, content}) => {
       title = this.transformText(title);
       content = this.transformText(content);
-      return title.includes(value) || content.includes(value);
+      return title?.includes(value) || content?.includes(value);
     });
     return of(filterList);
   }

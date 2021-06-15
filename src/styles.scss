@@ -68,6 +68,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       .mat-checkbox-label {
         display: block;
         width: 100%;
+        max-width: 440px;
+        overflow: hidden;
         margin-left: 10px;
       }
     }
